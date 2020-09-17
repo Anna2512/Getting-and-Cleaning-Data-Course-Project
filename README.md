@@ -79,6 +79,6 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 		group_by(subject, activity) %>%
 		summarise_all(funs(mean))
 
-	write.table(finalData, file = "finalData.txt", row.names = FALSE, col.names = FALSE)        
+	write.table(finalData, file = "TidyData.txt", row.names = FALSE, col.names = FALSE)        
         
       
